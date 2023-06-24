@@ -1,0 +1,44 @@
+openapi: 3.0.0
+info:
+  title: 番組マスタ
+  description: 番組マスタ情報のスキーマ情報
+  version: 1.0.0
+components:
+ schemas:
+  mProgram:
+   type: object
+   description: 番組マスタ情報（全列）
+   required:
+   - programId
+   properties:
+    programId:
+      type: string
+      maxLength: 8
+      description: 番組ID
+    programName:
+      type: string
+      maxLength: 30
+      description: 番組名
+    chanelId:
+      type: integer
+      maximum : 9
+      minimum : 0
+      description: チャンネルID
+    genreId:
+      type: integer
+      maximum : 99
+      minimum : 0
+      description: ジャンルID
+    deleteFlg:
+      type: integer
+      maximum : 9
+      minimum : 0
+      description: 論理削除フラグ
+    torokuDay:
+      type: string
+      format: yyyy/MM/dd
+      description: 登録日
+    koushinDay:
+      type: string
+      format: yyyy/MM/dd
+      description: 更新日

@@ -1,0 +1,39 @@
+openapi: 3.0.0
+info:
+  title: タレントマスタ
+  description: タレントマスタ情報のスキーマ情報
+  version: 1.0.0
+components:
+ schemas:
+  mTalent:
+   type: object
+   description: タレントマスタ情報（全列）
+   required:
+   - talentId
+   properties:
+    talentId:
+      type: string
+      maxLength: 8
+      description: タレントID
+    talentName:
+      type: string
+      maxLength: 30
+      description: タレント名
+    genreId:
+      type: integer
+      maximum : 99
+      minimum : 0
+      description: ジャンルID
+    deleteFlg:
+      type: integer
+      maximum : 9
+      minimum : 0
+      description: 論理削除フラグ
+    torokuDay:
+      type: string
+      format: yyyy/MM/dd
+      description: 登録日
+    koushinDay:
+      type: string
+      format: yyyy/MM/dd
+      description: 更新日
