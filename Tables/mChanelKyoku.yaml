@@ -1,0 +1,43 @@
+openapi: 3.0.0
+info:
+  title: チャンネル局マスタ
+  description: チャンネル局マスタ情報のスキーマ情報
+  version: 1.0.0
+components:
+ schemas:
+  mChanelKyoku:
+   type: object
+   description: チャンネル局マスタ情報（全列）
+   required:
+    - chanelId
+    - chanelKyoku
+    - areaId
+   properties:
+    chanelId:
+      type: integer
+      maximum : 99
+      minimum : 00
+      description: チャンネルID
+    chanelKyoku:
+      type: integer
+      maximum : 99
+      minimum : 00
+      description: チャンネル局ID
+    areaId:
+      type: integer
+      maximum : 9
+      minimum : 0
+      description: エリアID
+    deleteFlg:
+      type: integer
+      maximum : 9
+      minimum : 0
+      description: 論理削除フラグ
+    torokuDay:
+      type: string
+      format: yyyy/MM/dd
+      description: 登録日
+    koushinDay:
+      type: string
+      format: yyyy/MM/dd
+      description: 更新日

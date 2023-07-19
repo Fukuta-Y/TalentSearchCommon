@@ -1,0 +1,39 @@
+openapi: 3.0.0
+info:
+  title: 区分ジャンルマスタ
+  description: 区分ジャンルマスタ情報のスキーマ情報
+  version: 1.0.0
+components:
+ schemas:
+  mKbnGenre:
+   type: object
+   description: 区分ジャンルマスタ情報（全列）
+   required:
+   - genreId
+   - jyunjyo
+   properties:
+    genreId:
+      type: integer
+      maximum : 000
+      minimum : 999
+    jyunjyo:
+      type: integer
+      maximum : 000
+      minimum : 999
+    genre:
+      type: string
+      maxLength: 30
+      description: ジャンル
+    deleteFlg:
+      type: integer
+      maximum : 9
+      minimum : 0
+      description: 論理削除フラグ
+    torokuDay:
+      type: string
+      format: yyyy/MM/dd
+      description: 登録日
+    koushinDay:
+      type: string
+      format: yyyy/MM/dd
+      description: 更新日
