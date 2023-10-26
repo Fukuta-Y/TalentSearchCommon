@@ -27,12 +27,12 @@ components:
       type: string
       maxLength: 8
       description: タレントID
-    targetNentsuki:
+    nentsuki:
       type: integer
       maximum : 2100
       minimum : 1990
       description: 対象年月
-    targetShu:
+    shu:
       type: integer
       maximum : 5
       minimum : 1
