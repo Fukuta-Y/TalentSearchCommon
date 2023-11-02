@@ -18,7 +18,7 @@ components:
       maximum : 99
       minimum : 00
       description: チャンネルID
-    chanelKyoku:
+    chanelKyokuId:
       type: integer
       maximum : 99
       minimum : 00
