@@ -17,7 +17,7 @@ components:
       description: ID
     onAirDay:
       type: string
-      format: date-time
+      format: yyyy/MM/dd
       description: オンエア日
     programId:
       type: string
@@ -29,8 +29,8 @@ components:
       description: タレントID
     nentsuki:
       type: integer
-      maximum : 2100
-      minimum : 1990
+      maximum : 210012
+      minimum : 199001
       description: 対象年月
     shu:
       type: integer
