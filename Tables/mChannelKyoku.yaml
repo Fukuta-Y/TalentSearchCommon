@@ -5,20 +5,20 @@ info:
   version: 1.0.0
 components:
  schemas:
-  mChanelKyoku:
+  mChannelKyoku:
    type: object
    description: チャンネル局マスタ情報（全列）
    required:
-    - chanelId
-    - chanelKyoku
+    - channelId
+    - channelKyoku
     - areaId
    properties:
-    chanelId:
+    channelId:
       type: integer
       maximum : 99
       minimum : 00
       description: チャンネルID
-    chanelKyokuId:
+    channelKyokuId:
       type: integer
       maximum : 99
       minimum : 00
