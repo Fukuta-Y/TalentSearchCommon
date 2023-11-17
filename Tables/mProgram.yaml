@@ -19,7 +19,7 @@ components:
       type: string
       maxLength: 30
       description: 番組名
-    chanelId:
+    channelId:
       type: integer
       maximum : 9
       minimum : 0
