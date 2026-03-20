@@ -1,0 +1,4 @@
+コマンド
+cd /Users/yukifukuta/Desktop
+chmod +x backup_all.sh
+./backup_all.sh 
